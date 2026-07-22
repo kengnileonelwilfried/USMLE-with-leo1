@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learn with Leo — USMLE Step 1, Step 2 CK & Step 3 Tutoring</title>
+
+<!-- SEO -->
+<meta name="description" content="One-on-one USMLE Step 1, Step 2 CK, and Step 3 tutoring with Leo. Personalized study plans, high-yield materials, 5–7 sessions a week, from foundations to exam day.">
+<meta name="keywords" content="USMLE tutor, USMLE Step 1 tutoring, USMLE Step 2 CK tutoring, USMLE Step 3 tutoring, medical school exam prep, 1-on-1 USMLE tutor, NBME prep, UWorld tutor">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Leo Kengni">
+<!-- Replace this with your live GitHub Pages URL once published, e.g. https://yourusername.github.io/usmle-with-leo/ -->
+<link rel="canonical" href="https://yourusername.github.io/usmle-with-leo/">
+
+<!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Learn with Leo — USMLE Step 1, Step 2 CK & Step 3 Tutoring">
+<meta property="og:description" content="One-on-one USMLE tutoring built around your target score and timeline. Personalized study plans, high-yield materials, 5–7 sessions a week.">
+<meta property="og:image" content="https://yourusername.github.io/usmle-with-leo/leo-photo.jpg">
+<meta property="og:url" content="https://yourusername.github.io/usmle-with-leo/">
+<meta property="og:site_name" content="Learn with Leo">
+
+<!-- Twitter / X card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Learn with Leo — USMLE Step 1, Step 2 CK & Step 3 Tutoring">
+<meta name="twitter:description" content="One-on-one USMLE tutoring built around your target score and timeline. Personalized study plans, high-yield materials, 5–7 sessions a week.">
+<meta name="twitter:image" content="https://yourusername.github.io/usmle-with-leo/leo-photo.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Structured data for search engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Learn with Leo",
+  "description": "One-on-one USMLE Step 1, Step 2 CK, and Step 3 tutoring with personalized study plans, high-yield materials, and 5–7 sessions weekly.",
+  "founder": {
+    "@type": "Person",
+    "name": "Leo Kengni"
+  },
+  "telephone": "+237680921664",
+  "email": "wilfriedleokengni1@gmail.com",
+  "url": "https://yourusername.github.io/usmle-with-leo/",
+  "image": "https://yourusername.github.io/usmle-with-leo/leo-photo.jpg",
+  "priceRange": "$500-$3000",
+  "areaServed": "Worldwide"
+}
+</script>
+
+<style>
+  :root{
+    --navy-dark:#071527;
+    --navy:#0A1E3C;
+    --navy-mid:#132a4d;
+    --gold:#E3A83B;
+    --gold-light:#F0C46C;
+    --paper:#F6F4EE;
+    --paper-dim:#EAE6DB;
+    --ink:#16202E;
+    --ink-soft:#4B5768;
+    --teal:#2F7D6B;
+    --line:#D8D2C2;
+    --radius:2px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    letter-spacing:-0.01em;
+    color:var(--navy);
+  }
+  .mono{
+    font-family:'IBM Plex Mono',monospace;
+  }
+  a{color:inherit; text-decoration:none;}
+  img{max-width:100%; display:block;}
+  .wrap{
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 32px;
+  }
+  ::selection{background:var(--gold); color:var(--navy-dark);}
+  :focus-visible{outline:2px solid var(--gold); outline-offset:3px;}
+
+  /* ---------- NAV ---------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(246,244,238,0.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:18px 32px;
+    max-width:1180px; margin:0 auto;
+  }
+  .brand{
+    display:flex; align-items:baseline; gap:8px;
+    font-family:'Fraunces',serif; font-weight:600; font-size:1.15rem;
+    color:var(--navy);
+  }
+  .brand .leo{ color:var(--gold); font-style:italic; font-weight:600;}
+  .navlinks{ display:flex; gap:32px; font-size:0.92rem; font-weight:500; }
+  .navlinks a{ color:var(--ink-soft); transition:color .2s; }
+  .navlinks a:hover{ color:var(--navy); }
+  .nav-cta{
+    background:var(--navy); color:var(--paper);
+    padding:10px 20px; font-size:0.88rem; font-weight:600;
+    border-radius:var(--radius);
+    transition:background .2s;
+  }
+  .nav-cta:hover{ background:var(--navy-mid); }
+  .navtoggle{ display:none; }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    background:var(--navy);
+    background-image:
+      radial-gradient(circle at 88% 8%, rgba(227,168,59,0.14), transparent 45%),
+      radial-gradient(circle at 4% 92%, rgba(47,125,107,0.12), transparent 40%);
+    color:var(--paper);
+    padding:88px 0 100px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero .wrap{
+    display:grid;
+    grid-template-columns:1.05fr 0.95fr;
+    gap:56px;
+    align-items:center;
+  }
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:10px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:0.76rem; letter-spacing:0.14em; text-transform:uppercase;
+    color:var(--gold-light);
+    margin-bottom:22px;
+  }
+  .eyebrow::before{
+    content:''; width:22px; height:1px; background:var(--gold);
+  }
+  .hero h1{
+    color:#fff;
+    font-size:clamp(2.3rem, 4vw, 3.4rem);
+    line-height:1.06;
+    margin-bottom:22px;
+  }
+  .hero h1 em{ color:var(--gold-light); font-style:italic; }
+  .hero p.lede{
+    font-size:1.08rem;
+    color:#C9D2E0;
+    max-width:46ch;
+    margin-bottom:34px;
+  }
+  .hero-ctas{ display:flex; gap:14px; flex-wrap:wrap; margin-bottom:40px;}
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:14px 26px;
+    font-weight:600; font-size:0.95rem;
+    border-radius:var(--radius);
+    transition:transform .15s ease, box-shadow .15s ease;
+    border:1px solid transparent;
+  }
+  .btn-gold{ background:var(--gold); color:var(--navy-dark); }
+  .btn-gold:hover{ transform:translateY(-2px); box-shadow:0 10px 24px rgba(227,168,59,0.25); }
+  .btn-ghost{ border-color:rgba(255,255,255,0.3); color:#fff; }
+  .btn-ghost:hover{ border-color:#fff; transform:translateY(-2px); }
+  .hero-stats{
+    display:flex; gap:34px;
+    font-family:'IBM Plex Mono',monospace;
+  }
+  .hero-stats div strong{
+    display:block; font-size:1.5rem; color:var(--gold-light); font-weight:600;
+  }
+  .hero-stats div span{ font-size:0.74rem; color:#93A1B8; letter-spacing:0.04em;}
+
+  /* ---------- SCORE REPORT CARD (signature element) ---------- */
+  .report{
+    background:var(--paper);
+    color:var(--ink);
+    border-radius:6px;
+    box-shadow:0 30px 60px -20px rgba(0,0,0,0.5);
+    overflow:hidden;
+    transform:rotate(1.2deg);
+    border:1px solid #d9d3c0;
+  }
+  .report:hover{ transform:rotate(0deg); transition:transform .4s ease; }
+  .report-head{
+    background:var(--navy-dark);
+    color:#fff;
+    padding:18px 22px;
+    display:flex; justify-content:space-between; align-items:center;
+    border-bottom:3px solid var(--gold);
+  }
+  .report-head .tag{
+    font-family:'IBM Plex Mono',monospace; font-size:0.68rem;
+    letter-spacing:0.1em; text-transform:uppercase; color:var(--gold-light);
+  }
+  .report-head .id{
+    font-family:'IBM Plex Mono',monospace; font-size:0.68rem; color:#8FA0BC;
+  }
+  .report-body{ padding:24px 22px 22px; }
+  .report-title{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase;
+    color:var(--ink-soft); margin-bottom:4px;
+  }
+  .score-row{
+    display:flex; align-items:flex-end; gap:18px;
+    margin-bottom:18px; padding-bottom:18px;
+    border-bottom:1px dashed var(--line);
+  }
+  .score-num{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:3.1rem; font-weight:600; color:var(--navy);
+    line-height:1;
+  }
+  .score-meta{ font-size:0.82rem; color:var(--ink-soft); padding-bottom:6px; }
+  .score-meta .pass{ color:var(--teal); font-weight:700; }
+  .bar-row{ margin-bottom:12px; }
+  .bar-row .label{
+    display:flex; justify-content:space-between;
+    font-size:0.76rem; color:var(--ink-soft); margin-bottom:5px;
+    font-family:'IBM Plex Mono',monospace;
+  }
+  .bar-track{
+    height:7px; background:var(--paper-dim); border-radius:4px; overflow:hidden;
+    position:relative;
+  }
+  .bar-fill{
+    height:100%; border-radius:4px;
+    background:linear-gradient(90deg, var(--teal), #4FA890);
+    width:0%;
+    transition:width 1.4s cubic-bezier(.2,.8,.2,1);
+  }
+  .bar-fill.before{ background:#C7BFA6; }
+  .report-foot{
+    margin-top:16px; display:flex; justify-content:space-between; align-items:center;
+    font-family:'IBM Plex Mono',monospace; font-size:0.68rem; color:var(--ink-soft);
+  }
+  .heartbeat{ width:64px; height:20px; }
+
+  /* ---------- SECTION SHELL ---------- */
+  section{ padding:96px 0; }
+  .section-head{ max-width:640px; margin-bottom:56px; }
+  .section-eyebrow{
+    font-family:'IBM Plex Mono',monospace; font-size:0.74rem;
+    letter-spacing:0.14em; text-transform:uppercase; color:var(--teal);
+    display:block; margin-bottom:12px;
+  }
+  .section-head h2{ font-size:clamp(1.7rem,3vw,2.4rem); margin-bottom:14px; }
+  .section-head p{ color:var(--ink-soft); font-size:1.02rem; }
+
+  /* ---------- PATHWAY (diagnosis -> plan -> regimen -> outcome) ---------- */
+  .pathway{ background:var(--paper); }
+  .path-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:0;
+    border-top:1px solid var(--line);
+    border-left:1px solid var(--line);
+  }
+  .path-card{
+    padding:32px 26px;
+    border-right:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+    position:relative;
+  }
+  .path-card .k{
+    font-family:'IBM Plex Mono',monospace; font-size:0.72rem;
+    color:var(--gold); letter-spacing:0.08em; text-transform:uppercase;
+    display:block; margin-bottom:14px;
+  }
+  .path-card h3{ font-size:1.15rem; margin-bottom:10px; }
+  .path-card p{ color:var(--ink-soft); font-size:0.92rem; }
+
+  /* ---------- TUTOR ---------- */
+  .tutor{ background:var(--paper-dim); }
+  .tutor-grid{
+    display:grid;
+    grid-template-columns:0.8fr 1.2fr;
+    gap:56px;
+    align-items:center;
+  }
+  .tutor-photo-card{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-top:4px solid var(--gold);
+    box-shadow:0 24px 48px -20px rgba(10,30,60,0.22);
+  }
+  .tutor-photo-card .tp-label{
+    display:flex; justify-content:space-between; align-items:center;
+    padding:12px 18px;
+    font-family:'IBM Plex Mono',monospace; font-size:0.68rem;
+    letter-spacing:0.08em; text-transform:uppercase;
+    color:var(--ink-soft); border-bottom:1px solid var(--line);
+  }
+  .tutor-photo-card .tp-label span:last-child{ color:var(--teal); font-weight:700; }
+  .tutor-photo-card img{ width:100%; display:block; }
+  .tutor-copy .section-eyebrow{ margin-bottom:12px; }
+  .tutor-copy h2{ font-size:clamp(1.6rem,2.8vw,2.2rem); margin-bottom:16px; }
+  .tutor-copy p{ color:var(--ink-soft); font-size:1rem; margin-bottom:16px; max-width:52ch; }
+  .tutor-facts{
+    display:flex; gap:28px; margin-top:26px; flex-wrap:wrap;
+    padding-top:22px; border-top:1px solid var(--line);
+  }
+  .tutor-facts div strong{
+    display:block; font-family:'IBM Plex Mono',monospace;
+    font-size:1.1rem; color:var(--navy); margin-bottom:2px;
+  }
+  .tutor-facts div span{ font-size:0.78rem; color:var(--ink-soft); letter-spacing:0.02em; }
+
+  /* ---------- TRACKS (Step 1 / 2CK / 3) ---------- */
+  .tracks{ background:var(--navy-dark); color:var(--paper); }
+  .tracks .section-head p{ color:#AEB9CC; }
+  .tracks .section-eyebrow{ color:var(--gold-light); }
+  .tabbar{
+    display:flex; gap:8px; margin-bottom:36px; flex-wrap:wrap;
+    border-bottom:1px solid rgba(255,255,255,0.15);
+  }
+  .tab{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:0.82rem; letter-spacing:0.03em;
+    padding:12px 6px; margin-right:26px;
+    color:#8FA0BC; background:none; border:none; cursor:pointer;
+    border-bottom:2px solid transparent;
+    transition:color .2s;
+  }
+  .tab.active{ color:#fff; border-bottom-color:var(--gold); }
+  .tab-panel{ display:none; }
+  .tab-panel.active{ display:grid; grid-template-columns:1fr 1fr; gap:48px; }
+  .tab-panel .exam-detail h3{ color:#fff; font-size:1.5rem; margin-bottom:14px; }
+  .tab-panel .exam-detail p{ color:#AEB9CC; margin-bottom:22px; font-size:0.98rem; }
+  .checklist{ list-style:none; }
+  .checklist li{
+    display:flex; gap:12px; padding:10px 0;
+    border-top:1px solid rgba(255,255,255,0.08);
+    font-size:0.92rem; color:#D6DEEA;
+  }
+  .checklist li::before{
+    content:'✓'; color:var(--teal); font-weight:700; flex-shrink:0;
+  }
+  .exam-vitals{
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:4px;
+    padding:24px;
+  }
+  .vital-row{
+    display:flex; justify-content:space-between; align-items:center;
+    padding:12px 0; border-bottom:1px solid rgba(255,255,255,0.08);
+    font-size:0.86rem;
+  }
+  .vital-row:last-child{ border-bottom:none; }
+  .vital-row .v-label{ color:#8FA0BC; font-family:'IBM Plex Mono',monospace; font-size:0.76rem; letter-spacing:0.04em;}
+  .vital-row .v-val{ color:#fff; font-weight:600; font-family:'IBM Plex Mono',monospace;}
+
+  /* ---------- INCLUDES ---------- */
+  .includes{ background:var(--paper-dim); }
+  .includes-grid{
+    display:grid; grid-template-columns:repeat(5,1fr); gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+  }
+  .inc-card{
+    background:var(--paper-dim);
+    padding:30px 22px;
+  }
+  .inc-card .num{
+    font-family:'IBM Plex Mono',monospace; font-size:0.76rem;
+    color:var(--gold); margin-bottom:16px; display:block;
+  }
+  .inc-card h4{ font-size:1rem; margin-bottom:8px; }
+  .inc-card p{ font-size:0.85rem; color:var(--ink-soft); }
+
+  /* ---------- PRICING ---------- */
+  .pricing{ background:var(--paper); }
+  .price-grid{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:24px;
+  }
+  .plan{
+    background:#fff;
+    border:1px solid var(--line);
+    padding:34px 28px;
+    position:relative;
+    display:flex; flex-direction:column;
+  }
+  .plan.featured{
+    border-color:var(--navy);
+    box-shadow:0 20px 40px -16px rgba(10,30,60,0.25);
+  }
+  .plan-badge{
+    position:absolute; top:0; right:28px; transform:translateY(-50%);
+    background:var(--gold); color:var(--navy-dark);
+    font-family:'IBM Plex Mono',monospace; font-size:0.68rem;
+    letter-spacing:0.06em; text-transform:uppercase;
+    padding:5px 12px; border-radius:2px; font-weight:700;
+  }
+  .plan-name{
+    font-family:'IBM Plex Mono',monospace; font-size:0.78rem;
+    letter-spacing:0.08em; text-transform:uppercase; color:var(--teal);
+    margin-bottom:10px;
+  }
+  .plan h3{ font-size:1.3rem; margin-bottom:6px; }
+  .plan .price{
+    font-family:'IBM Plex Mono',monospace; font-size:2rem; color:var(--navy);
+    font-weight:600; margin:14px 0 4px;
+  }
+  .plan .price span{ font-size:0.9rem; color:var(--ink-soft); font-weight:400; }
+  .plan .cadence{ font-size:0.84rem; color:var(--ink-soft); margin-bottom:22px; }
+  .plan ul{ list-style:none; margin-bottom:28px; flex-grow:1; }
+  .plan ul li{
+    font-size:0.88rem; padding:8px 0; border-top:1px solid var(--line);
+    display:flex; gap:10px; color:var(--ink);
+  }
+  .plan ul li::before{ content:'—'; color:var(--gold); flex-shrink:0; }
+  .plan .btn{ width:100%; justify-content:center; }
+  .price-note{
+    margin-top:28px; font-size:0.85rem; color:var(--ink-soft);
+    text-align:center;
+  }
+
+  /* ---------- QUOTE ---------- */
+  .quote-section{
+    background:var(--navy);
+    color:#fff;
+    padding:90px 0;
+    text-align:center;
+  }
+  .quote-section blockquote{
+    font-family:'Fraunces',serif; font-style:italic; font-weight:400;
+    font-size:clamp(1.4rem,2.6vw,2rem);
+    max-width:800px; margin:0 auto 26px;
+    line-height:1.4;
+    color:#F0EAD8;
+  }
+  .quote-section cite{
+    font-family:'IBM Plex Mono',monospace; font-size:0.8rem;
+    color:var(--gold-light); font-style:normal; letter-spacing:0.04em;
+  }
+
+  /* ---------- CONTACT ---------- */
+  .contact{ background:var(--paper-dim); }
+  .contact-grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center;
+  }
+  .contact h2{ font-size:clamp(1.8rem,3vw,2.5rem); margin-bottom:18px; }
+  .contact p.lede{ color:var(--ink-soft); margin-bottom:32px; font-size:1.02rem; max-width:46ch;}
+  .contact-methods{ display:flex; flex-direction:column; gap:18px; }
+  .cmethod{
+    display:flex; align-items:center; gap:16px;
+    background:#fff; border:1px solid var(--line);
+    padding:20px 22px;
+  }
+  .cmethod .icon{
+    width:42px; height:42px; border-radius:50%;
+    background:var(--navy); color:var(--gold-light);
+    display:flex; align-items:center; justify-content:center;
+    font-family:'IBM Plex Mono',monospace; font-size:1rem; flex-shrink:0;
+  }
+  .cmethod .c-label{ font-size:0.72rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--ink-soft); font-family:'IBM Plex Mono',monospace; margin-bottom:3px;}
+  .cmethod .c-val{ font-weight:600; color:var(--navy); font-size:1.05rem; }
+  .cta-panel{
+    background:var(--navy-dark);
+    color:#fff;
+    padding:44px 36px;
+    border-top:4px solid var(--gold);
+  }
+  .cta-panel h3{ color:#fff; font-size:1.4rem; margin-bottom:12px; }
+  .cta-panel p{ color:#AEB9CC; font-size:0.94rem; margin-bottom:26px; }
+  .cta-panel .btn{ width:100%; justify-content:center; margin-bottom:12px; }
+
+  footer{
+    background:var(--navy-dark); color:#7C8AA3;
+    padding:32px 0; font-size:0.82rem;
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,0.08);
+  }
+  footer strong{ color:var(--gold-light); }
+
+  @media (max-width: 900px){
+    .hero .wrap{ grid-template-columns:1fr; }
+    .tutor-grid{ grid-template-columns:1fr; }
+    .tutor-photo-card{ max-width:420px; margin:0 auto; }
+    .navlinks{ display:none; }
+    .path-grid{ grid-template-columns:repeat(2,1fr); }
+    .includes-grid{ grid-template-columns:repeat(2,1fr); }
+    .tab-panel.active{ grid-template-columns:1fr; }
+    .price-grid{ grid-template-columns:1fr; }
+    .contact-grid{ grid-template-columns:1fr; }
+    .hero-stats{ flex-wrap:wrap; row-gap:14px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="brand">LEARN WITH <span class="leo">Leo</span></div>
+    <div class="navlinks">
+      <a href="#pathway">Approach</a>
+      <a href="#tutor">Tutor</a>
+      <a href="#tracks">Exams</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="#contact" class="nav-cta">Book a diagnostic call</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">USMLE Step 1 · Step 2 CK · Step 3</span>
+      <h1>Your score report<br>hasn't been written <em>yet.</em></h1>
+      <p class="lede">One-on-one tutoring for the USMLE sequence — from your first pass through First Aid to the day you walk out of Step 3. Personalized study plans, high-yield materials, and a tutor who answers the phone.</p>
+      <div class="hero-ctas">
+        <a href="tel:+237680921664" class="btn btn-gold">Call (+237) 680 921 664</a>
+        <a href="#pricing" class="btn btn-ghost">See pricing</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>5–7</strong><span>SESSIONS / WEEK</span></div>
+        <div><strong>1:1</strong><span>PERSONALIZED FORMAT</span></div>
+        <div><strong>3</strong><span>EXAMS COVERED</span></div>
+        <div><strong>0</strong><span>COHORTS, EVER</span></div>
+      </div>
+    </div>
+
+    <div class="report">
+      <div class="report-head">
+        <span class="tag">Progress Report</span>
+        <span class="id">CANDIDATE: YOU</span>
+      </div>
+      <div class="report-body">
+        <div class="report-title">Step 2 CK · Practice Assessment</div>
+        <div class="score-row">
+          <div class="score-num" id="scoreNum">259</div>
+          <div class="score-meta">/300 &nbsp;·&nbsp; <span class="pass">On track</span></div>
+        </div>
+
+        <div class="bar-row">
+          <div class="label"><span>Internal Medicine</span><span>Week 1 → Week 10</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="88"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="label"><span>Surgery</span><span>Week 1 → Week 10</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="79"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="label"><span>OB/GYN & Pediatrics</span><span>Week 1 → Week 10</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="83"></div></div>
+        </div>
+
+        <div class="report-foot">
+          <span>ASSESSED BY: L. KENGNI</span>
+          <span>STATUS: PASS TRAJECTORY</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pathway" id="pathway">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-eyebrow">The Approach</span>
+      <h2>Every candidate gets a workup before a plan.</h2>
+      <p>No two students walk in with the same gaps, timeline, or target score. The process starts with an honest look at where you stand, then builds forward from there.</p>
+    </div>
+  </div>
+  <div class="path-grid">
+    <div class="path-card">
+      <span class="k">01 · Diagnosis</span>
+      <h3>Diagnostic assessment</h3>
+      <p>A practice block and a real conversation about your timeline, target score, and where your foundation is thin.</p>
+    </div>
+    <div class="path-card">
+      <span class="k">02 · Treatment Plan</span>
+      <h3>Personalized study plan</h3>
+      <p>A week-by-week roadmap built around your exam date — not a generic syllabus, and not someone else's schedule.</p>
+    </div>
+    <div class="path-card">
+      <span class="k">03 · Regimen</span>
+      <h3>5–7 sessions weekly</h3>
+      <p>Consistent, high-frequency contact using First Aid, UWorld, NBME, and AMBOSS — content review paired with active recall.</p>
+    </div>
+    <div class="path-card">
+      <span class="k">04 · Prognosis</span>
+      <h3>Assessment & follow-through</h3>
+      <p>Regular mock exams track real progress, and doubt-clearing support is there for the moment you get stuck at 11pm.</p>
+    </div>
+  </div>
+</section>
+
+<section class="tutor" id="tutor">
+  <div class="wrap tutor-grid">
+    <div class="tutor-photo-card">
+      <div class="tp-label"><span>TUTOR PROFILE</span><span>ACTIVE</span></div>
+      <img src="leo-photo.jpg" alt="Leo Kengni, USMLE tutor, wearing a stethoscope">
+    </div>
+    <div class="tutor-copy">
+      <span class="section-eyebrow">Meet Your Tutor</span>
+      <h2>You're working directly with Leo. Every session, every step.</h2>
+      <p>No hand-offs to junior tutors and no rotating instructors. From your first diagnostic call through the day you sit for your exam, you're working with one person who knows your gaps, your timeline, and your target score.</p>
+      <p>The approach is built on the same discipline the exams demand: consistency, active recall, and a plan that adjusts as your real performance data comes in — not a fixed syllabus followed regardless of how you're actually doing.</p>
+      <div class="tutor-facts">
+        <div><strong>1-on-1</strong><span>EVERY SESSION</span></div>
+        <div><strong>3</strong><span>STEP EXAMS COVERED</span></div>
+        <div><strong>5–7</strong><span>SESSIONS PER WEEK</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tracks" id="tracks">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-eyebrow">The Exams</span>
+      <h2>Tutoring built around what each Step actually tests.</h2>
+      <p>Step 1, Step 2 CK, and Step 3 reward different skills. The plan changes accordingly.</p>
+    </div>
+
+    <div class="tabbar">
+      <button class="tab active" data-tab="s1">STEP 1</button>
+      <button class="tab" data-tab="s2">STEP 2 CK</button>
+      <button class="tab" data-tab="s3">STEP 3</button>
+    </div>
+
+    <div class="tab-panel active" id="s1">
+      <div class="exam-detail">
+        <h3>Step 1 — Foundations</h3>
+        <p>Pass/fail, but the mechanisms you build here carry you through the rest of your career. The focus is depth, retention, and comfort with the reasoning — not speed-running content.</p>
+        <ul class="checklist">
+          <li>High-yield basic science, mapped to First Aid</li>
+          <li>Active recall and spaced repetition built into the schedule</li>
+          <li>Strong foundations in pathophysiology and pharmacology</li>
+          <li>NBME-style practice woven in from week one</li>
+        </ul>
+      </div>
+      <div class="exam-vitals">
+        <div class="vital-row"><span class="v-label">FORMAT</span><span class="v-val">Pass / Fail</span></div>
+        <div class="vital-row"><span class="v-label">TYPICAL PREP WINDOW</span><span class="v-val">12–20 weeks</span></div>
+        <div class="vital-row"><span class="v-label">PRIMARY TOOLS</span><span class="v-val">First Aid, UWorld, AMBOSS</span></div>
+        <div class="vital-row"><span class="v-label">SESSION FOCUS</span><span class="v-val">Mechanism-first review</span></div>
+        <div class="vital-row"><span class="v-label">CHECKPOINTS</span><span class="v-val">Weekly NBME-style blocks</span></div>
+      </div>
+    </div>
+
+    <div class="tab-panel" id="s2">
+      <div class="exam-detail">
+        <h3>Step 2 CK — Clinical Reasoning</h3>
+        <p>This exam rewards clinical judgment, not memorization. Sessions shift toward case-based reasoning, next-best-step thinking, and the guidelines that actually show up on shelf exams.</p>
+        <ul class="checklist">
+          <li>Clinical reasoning and CCS-style case approach</li>
+          <li>High-yield topics mapped to current clinical guidelines</li>
+          <li>UWorld and CMS-style practice, question by question</li>
+          <li>Integration with shelf exams during clinical rotations</li>
+        </ul>
+      </div>
+      <div class="exam-vitals">
+        <div class="vital-row"><span class="v-label">FORMAT</span><span class="v-val">3-digit score</span></div>
+        <div class="vital-row"><span class="v-label">TYPICAL PREP WINDOW</span><span class="v-val">8–16 weeks</span></div>
+        <div class="vital-row"><span class="v-label">PRIMARY TOOLS</span><span class="v-val">UWorld, NBME, CMS cases</span></div>
+        <div class="vital-row"><span class="v-label">SESSION FOCUS</span><span class="v-val">Case-based decision making</span></div>
+        <div class="vital-row"><span class="v-label">CHECKPOINTS</span><span class="v-val">Timed NBME assessments</span></div>
+      </div>
+    </div>
+
+    <div class="tab-panel" id="s3">
+      <div class="exam-detail">
+        <h3>Step 3 — Independent Practice</h3>
+        <p>Often squeezed into residency, with the least time and the highest stakes for licensure. Sessions are built for efficiency — targeted review, CCS-case fluency, and a schedule that respects your call rotation.</p>
+        <ul class="checklist">
+          <li>Efficient, residency-compatible session scheduling</li>
+          <li>CCS case simulation and management-focused practice</li>
+          <li>Targeted review of foundational medicine and biostatistics</li>
+          <li>Final-stretch mock exams under real time pressure</li>
+        </ul>
+      </div>
+      <div class="exam-vitals">
+        <div class="vital-row"><span class="v-label">FORMAT</span><span class="v-val">2-day, MCQ + CCS</span></div>
+        <div class="vital-row"><span class="v-label">TYPICAL PREP WINDOW</span><span class="v-val">6–12 weeks</span></div>
+        <div class="vital-row"><span class="v-label">PRIMARY TOOLS</span><span class="v-val">UWorld CCS, NBME forms</span></div>
+        <div class="vital-row"><span class="v-label">SESSION FOCUS</span><span class="v-val">Management & disposition</span></div>
+        <div class="vital-row"><span class="v-label">CHECKPOINTS</span><span class="v-val">Full-length timed simulations</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="includes">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-eyebrow">What's Included</span>
+      <h2>Every plan, every exam, the same standard.</h2>
+    </div>
+  </div>
+  <div class="includes-grid">
+    <div class="inc-card">
+      <span class="num">01</span>
+      <h4>Personalized study plan</h4>
+      <p>A customized roadmap built around your target score and your actual timeline.</p>
+    </div>
+    <div class="inc-card">
+      <span class="num">02</span>
+      <h4>High-yield materials</h4>
+      <p>Top-rated resources and question banks — First Aid, UWorld, NBME, AMBOSS, and more.</p>
+    </div>
+    <div class="inc-card">
+      <span class="num">03</span>
+      <h4>Proven strategies</h4>
+      <p>Test-taking strategy built for the exam itself, not just the content behind it.</p>
+    </div>
+    <div class="inc-card">
+      <span class="num">04</span>
+      <h4>Regular assessments</h4>
+      <p>Frequent mock exams and performance reviews so progress is measured, not assumed.</p>
+    </div>
+    <div class="inc-card">
+      <span class="num">05</span>
+      <h4>Ongoing support</h4>
+      <p>Doubt-clearing, motivation, and guidance at every step — including the hard weeks.</p>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-eyebrow">Pricing</span>
+      <h2>Choose a cadence. Not a package.</h2>
+      <p>Every plan is 1-on-1. The difference is frequency and how close you are to test day. Final pricing is confirmed after the diagnostic call, once your plan and session count are set.</p>
+    </div>
+
+    <div class="price-grid">
+      <div class="plan">
+        <div class="plan-name">Foundations</div>
+        <h3>Content Building</h3>
+        <div class="price">$500<span>–$1,200 / mo</span></div>
+        <div class="cadence">5 sessions per week</div>
+        <ul>
+          <li>Best for early Step 1 or Step 2 CK prep</li>
+          <li>Personalized study plan & materials list</li>
+          <li>Weekly progress check-ins</li>
+          <li>Async doubt-clearing between sessions</li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost" style="border-color:var(--navy); color:var(--navy);">Start with a call</a>
+      </div>
+
+      <div class="plan featured">
+        <div class="plan-badge">Most Booked</div>
+        <div class="plan-name">Intensive</div>
+        <h3>Exam-Ready</h3>
+        <div class="price">$500<span>–$2,200 / mo</span></div>
+        <div class="cadence">6 sessions per week</div>
+        <ul>
+          <li>Best for candidates 8–12 weeks from test day</li>
+          <li>Everything in Foundations</li>
+          <li>Timed NBME-style assessments, reviewed line by line</li>
+          <li>Priority scheduling around your rotations</li>
+        </ul>
+        <a href="#contact" class="btn btn-gold">Start with a call</a>
+      </div>
+
+      <div class="plan">
+        <div class="plan-name">Command</div>
+        <h3>Final Stretch</h3>
+        <div class="price">$500<span>–$3,000 / mo</span></div>
+        <div class="cadence">7 sessions per week</div>
+        <ul>
+          <li>Best for the final weeks before Step 2 CK or Step 3</li>
+          <li>Everything in Intensive</li>
+          <li>Daily contact, including CCS case review for Step 3</li>
+          <li>Full-length simulated exams under real time pressure</li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost" style="border-color:var(--navy); color:var(--navy);">Start with a call</a>
+      </div>
+    </div>
+    <p class="price-note">Every tier starts at $500/month and is fully 1-on-1 — no cohorts, no group calls. Final rate depends on the exam, your starting point, and session frequency.</p>
+  </div>
+</section>
+
+<section class="quote-section">
+  <div class="wrap">
+    <blockquote>"Consistency. Strategy. Confidence. You bring the effort — I'll bring the guidance."</blockquote>
+    <cite>— LEO KENGNI, TUTOR</cite>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <span class="section-eyebrow">Get Started</span>
+      <h2>Let's build your path to a high score.</h2>
+      <p class="lede">The first step is a short call — where you're at, what you're aiming for, and how many sessions a week gets you there.</p>
+      <div class="contact-methods">
+        <div class="cmethod">
+          <div class="icon">☎</div>
+          <div>
+            <div class="c-label">Call or WhatsApp</div>
+            <a class="c-val" href="tel:+237680921664">(+237) 680 921 664</a>
+          </div>
+        </div>
+        <div class="cmethod">
+          <div class="icon">✉</div>
+          <div>
+            <div class="c-label">Email</div>
+            <a class="c-val" href="mailto:wilfriedleokengni1@gmail.com">wilfriedleokengni1@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-panel">
+      <h3>Book your diagnostic call</h3>
+      <p>Free, no-obligation. Bring your target score, your exam date, and your questions — leave with a plan.</p>
+      <a href="tel:+237680921664" class="btn btn-gold">Call (+237) 680 921 664</a>
+      <a href="mailto:wilfriedleokengni1@gmail.com" class="btn btn-ghost" style="border-color:rgba(255,255,255,0.3); color:#fff;">Email wilfriedleokengni1@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Dedicated tutor · Proven results · Your success is the goal — <strong>Learn with Leo. Succeed with confidence.</strong>
+  </div>
+</footer>
+
+<script>
+  // Tab switching
+  document.querySelectorAll('.tab').forEach(tab=>{
+    tab.addEventListener('click',()=>{
+      document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+      document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+      tab.classList.add('active');
+      document.getElementById(tab.dataset.tab).classList.add('active');
+    });
+  });
+
+  // Animate score report bars on load
+  window.addEventListener('load',()=>{
+    setTimeout(()=>{
+      document.querySelectorAll('.bar-fill').forEach(bar=>{
+        bar.style.width = bar.dataset.width + '%';
+      });
+    }, 300);
+  });
+
+  // Respect reduced motion
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.bar-fill').forEach(bar=>{
+      bar.style.transition = 'none';
+      bar.style.width = bar.dataset.width + '%';
+    });
+  }
+</script>
+
+</body>
+</html>
